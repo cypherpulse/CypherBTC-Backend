@@ -43,27 +43,15 @@ The CypherBTC Backend serves as the data layer for the CypherPBTC decentralized 
 
 ## Architecture
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Hiro Chain    │────│  Chainhook Web   │────│   Express App   │
-│    hooks        │    │     hook         │    │                 │
-└─────────────────┘    └──────────────────┘    │                 │
-                                              │  ┌────────────┐ │
-                                              │  │ Validators │ │
-                                              │  └────────────┘ │
-                                              │                 │
-                                              │  ┌────────────┐ │
-                                              │  │  Services  │ │
-                                              │  └────────────┘ │
-                                              │                 │
-                                              │  ┌────────────┐ │
-                                              │  │   Models   │ │
-                                              │  └────────────┘ │
-                                              │                 │
-┌─────────────────┐    ┌──────────────────┐    │  ┌────────────┐ │
-│   Frontend      │◄───│    REST APIs     │◄───│  │   MongoDB  │ │
-│                 │    │                  │    │  └────────────┘ │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
+```mermaid
+graph TD
+    A[Hiro Chainhooks] --> B[Webhook Handler]
+    B --> C[Event Normalization]
+    C --> D[MongoDB Storage]
+    D --> E[REST APIs]
+    E --> F[Frontend Client]
+    D --> G[WebSocket Server]
+    G --> F
 ```
 
 ## Tech Stack
