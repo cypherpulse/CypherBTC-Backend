@@ -1,3 +1,4 @@
+// Minor update for documentation
 import dotenv from 'dotenv';
 
 dotenv.config();
