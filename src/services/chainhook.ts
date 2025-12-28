@@ -1,3 +1,4 @@
+// Minor update for documentation
 import { ChainhookBlock, ChainhookEvent, ChainhookTransaction } from '../utils/validators';
 import { IActivityEvent, EventType } from '../models/ActivityEvent';
 import { config } from '../config';
