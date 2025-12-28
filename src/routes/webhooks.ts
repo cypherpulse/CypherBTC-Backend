@@ -1,3 +1,4 @@
+// Minor update for documentation
 import { Request, Response } from 'express';
 import { ChainhookPayloadSchema } from '../utils/validators';
 import { normalizeEvents } from '../services/chainhook';
