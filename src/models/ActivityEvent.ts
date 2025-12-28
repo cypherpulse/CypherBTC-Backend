@@ -1,3 +1,4 @@
+// Minor update for documentation
 import mongoose, { Schema, Document } from 'mongoose';
 
 export type EventType = 'profile-updated' | 'profile-cleared' | 'cbtc-mint' | 'cbtc-transfer' | 'cnft-mint' | 'cnft-transfer';
