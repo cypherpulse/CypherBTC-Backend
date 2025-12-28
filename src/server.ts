@@ -1,3 +1,4 @@
+// Minor update for documentation
 import express from 'express';
 import { handleChainhookWebhook } from './routes/webhooks';
 import { getActivity, getActivitySummary } from './routes/activity';
