@@ -1,3 +1,4 @@
+// Minor update for documentation
 import winston from 'winston';
 
 export const logger = winston.createLogger({
