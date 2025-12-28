@@ -1,3 +1,4 @@
+// Minor update for documentation
 import { Request, Response } from 'express';
 import { ActivityEvent } from '../models/ActivityEvent';
 import { logger } from '../utils/logger';
