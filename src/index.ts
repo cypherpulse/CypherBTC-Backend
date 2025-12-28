@@ -1,3 +1,4 @@
+// Minor update for documentation
 import app from './server';
 import { connectMongoDB } from './db/mongo';
 import { config } from './config';
